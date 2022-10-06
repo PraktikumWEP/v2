@@ -5,6 +5,7 @@ $secondary: #1B1B27;
 $red: #FF0000;
 
 $mElement: 1rem;
+$mElementMedium: 2rem;
 $mElementLong: 3rem;
 $pContainer: 4.25rem;
 
@@ -83,13 +84,18 @@ body {
     margin: $mElementLong;
 }
 
+.mElementM {
+    margin: $mElementMedium;
+}
+
 .pContainer {
     padding: $pContainer;
 }
 
 .image {
-    width: 125px;
-    height: 125px;
+    border-radius: 50%;
+    width: 145px;
+    height: 145px;
 }
 
 .button {
