@@ -4,6 +4,10 @@ $primary: #DB9D47;
 $secondary: #1B1B27;
 $red: #FF0000;
 
+$mElement: 1rem;
+$mElementLong: 3rem;
+$pContainer: 4.25rem;
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@ $red: #FF0000;
 
 html,
 body {
-    color: $fontLight;
+    color: $light;
     font-size: 14;
     padding: 0;
     margin: 0;
@@ -39,7 +43,7 @@ body {
 
 .card {
     background-color: $light;
-    padding: 50px;
+    padding: $pContainer;
     border-radius: 1.5rem;
     backface-visibility: hidden;
     display: flex;
@@ -71,6 +75,18 @@ body {
     justify-content: center;
 }
 
+.mElement {
+    margin: $mElement;
+}
+
+.mElementL {
+    margin: $mElementLong;
+}
+
+.pContainer {
+    padding: $pContainer;
+}
+
 .image {
     width: 125px;
     height: 125px;
@@ -92,7 +108,7 @@ body {
     background-color: $secondary;
     box-shadow: 0 0 0 0;
     transition: 0.15s;
-    color: $primary;
+    color: $light;
 }
 
 .link {
