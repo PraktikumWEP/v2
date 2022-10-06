@@ -1,3 +1,9 @@
+$light: #FFFFFF;
+$dark: #000000;
+$primary: #DB9D47;
+$secondary: #1B1B27;
+$red: #FF0000;
+
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
@@ -79,6 +85,8 @@
 
 html,
 body {
+    color: $fontLight;
+    font-size: 14;
     padding: 0;
     margin: 0;
     font-family:
@@ -98,7 +106,18 @@ body {
 .background {
     height: 100vh;
     width: 100%;
-    background-color: white;
+    background-color: $secondary;
+}
+
+.card {
+    background-color: $light;
+    padding: 50px;
+    border-radius: 1.5rem;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: "center";
+    justify-content: "center";
+    color: $dark;
 }
 
 .max-width {
@@ -127,4 +146,23 @@ body {
 .image {
     width: 125px;
     height: 125px;
+}
+
+.button {
+    background-color: $primary;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0 0;
+    text-transform: "lowercase";
+    transition: 0.15s;
+    color: $secondary;
+    width: 200px;
+    padding: 10px 50px 10px 50px;
+    border: none;
+}
+
+.button:hover {
+    background-color: $secondary;
+    box-shadow: 0 0 0 0;
+    transition: 0.15s;
+    color: $primary;
 }
