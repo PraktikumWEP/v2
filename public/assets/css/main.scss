@@ -7,7 +7,8 @@ $red: #FF0000;
 $mElement: 1rem;
 $mElementMedium: 2rem;
 $mElementLong: 3rem;
-$pContainer: 4.25rem;
+$pContainerL: 4.25rem;
+$pContainerS: 1.5rem;
 
 * {
     margin: 0;
@@ -44,7 +45,7 @@ body {
 
 .card {
     background-color: $light;
-    padding: $pContainer;
+    padding: $pContainerL;
     border-radius: 1.5rem;
     backface-visibility: hidden;
     display: flex;
@@ -88,8 +89,12 @@ body {
     margin: $mElementMedium;
 }
 
-.pContainer {
-    padding: $pContainer;
+.pContainerL {
+    padding: $pContainerL;
+}
+
+.pContainerS {
+    padding: $pContainerS;
 }
 
 .image {
@@ -106,8 +111,9 @@ body {
     transition: 0.15s;
     color: $secondary;
     width: 200px;
-    padding: 10px 50px 10px 50px;
+    padding: 15px 35px 15px 35px;
     border: none;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -117,21 +123,49 @@ body {
     color: $light;
 }
 
+.breadcrumb-divider {
+    color: $primary;
+    font-weight: bold;
+}
+
 .link {
 	color: $primary;
-	transition: box-shadow .5s;
+	transition: text-shadow .5s;
+    font-weight: bold;
 }
 
 .link:hover {
-	box-shadow: 0 0 15px $dark;
+	text-shadow: 0 0 3px $primary;
+}
+
+.paragraph {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.inputs {
+    border: none;
+    border-bottom: 1px solid $dark;
+    width: 100%;
+    display: block;
+    transition: all .1s ease-out;
+}
+
+.inputs:focus {
+    border-color: $dark;
+    border: 2px solid $dark;
+    padding: 10px;
+    transition: all .15s ease-out;
+    transition-delay: 0.2s;
+    border-radius: 4px;
 }
 
 #removeFriend {
-    transition: color .2s, font-size 1s;
+    transition: color .2s, text-shadow .5s;
 }
 
 #removeFriend:hover {
-    font-size: 20;
+    text-shadow: 0 0 2px $red;
 	color: $red;
 }
 

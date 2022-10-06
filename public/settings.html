@@ -13,61 +13,71 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
-        <h1>Profile Settings</h1>
-        <div>
-            <fieldset>
-                <legend>Base Data</legend>
-                <div>
-                    <div>
-                        <label>First Name</label>
-                        <input type="text" placeholder="Your name"></input>
+        <div class="background centerRow">
+            <div class="mElementM">
+                <h1>Profile Settings</h1>
+            </div>
+            <div class="mElement">
+                <fieldset>
+                    <legend>Base Data</legend>
+                    <div class="mElement">
+                        <div class="mElement">
+                            <div class="mElement">
+                                <label>First Name</label>
+                            </div>
+                            <div class="mElement">
+                                <input type="text" placeholder="Your name" class="inputs"></input>
+                            </div>
+                        </div>
+                        <div class="mElement">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Your surname" class="inputs"></input>
+                        </div>
+                        <div class="mElement">
+                            <label>Coffee or Tea?</label>
+                            <select>
+                                <option>Neither</option>
+                                <option>Coffee</option>
+                                <option>Tea</option>
+                                <option>Both</option>
+                            </select>
+                        </div>
                     </div>
-                    <div>
-                        <label>Last Name</label>
-                        <input type="text" placeholder="Your surname"></input>
+                </fieldset>
+            </div>
+            <div class="mElement">
+                <fieldset>
+                    <legend>Tell Something about you</legend>
+                    <div class="mElement">
+                        <textarea placeholder="Leave a comment here" class="inputs"></textarea>
                     </div>
-                    <div>
-                        <label>Coffee or Tea?</label>
-                        <select>
-                            <option>Neither</option>
-                            <option>Coffee</option>
-                            <option>Tea</option>
-                            <option>Both</option>
-                        </select>
+                </fieldset>
+            </div>
+            <div class="mElement">
+                <fieldset>
+                    <legend>Preferred Chat Layout</legend>
+                    <div class="mElement">
+                        <div class="mElement">
+                            <input type="radio" name="layout" checked="checked">Username and message in one line</input>
+                        </div>
+                        <div class="mElement">
+                            <input type="radio" name="layout">Username and message in seperated lines</input>
+                        </div>
                     </div>
-                </div>
-            </fieldset>
-        </div>
-        <div>
-            <fieldset>
-                <legend>Tell Something about you</legend>
-                <div>
-                    <textarea placeholder="Leave a comment here"></textarea>
-                </div>
-            </fieldset>
-        </div>
-        <div>
-            <fieldset>
-                <legend>Preferred Chat Layout</legend>
-                <div>
-                    <div>
-                        <input type="radio" name="layout" checked="checked">Username and message in one line</input>
-                    </div>
-                    <div>
-                        <input type="radio" name="layout">Username and message in seperated lines</input>
-                    </div>
-                </div>
-            </fieldset>
-        </div>
-        <div>
-            <button>
+                </fieldset>
+            </div>
+            <div class="mElement">
                 <a href="friendlist.html">
-                    Cancel
+                    <button class="button">
+                        Cancel
+                    </button>
                 </a>
-            </button>
-            <button>
-                Save
-            </button>
+                <a href="">
+                    <button class="button">
+                        Save
+                    </button>
+                </a>
+            </div>
         </div>
     </body>
 </html>
