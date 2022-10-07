@@ -164,12 +164,21 @@ body {
     border-radius: 4px;
 }
 
-/* IDs */
-#removeFriend {
+.notification-count {
+    color: $light;
+    background-color: $primary;
+    box-shadow: 1px 1px 1px $dark;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    margin-left: .25rem;
+}
+
+.removeFriend {
     transition: color .2s, text-shadow .5s;
 }
 
-#removeFriend:hover {
+.removeFriend:hover {
     text-shadow: 0 0 2px $red;
 	color: $red;
 }

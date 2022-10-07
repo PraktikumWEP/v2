@@ -1,3 +1,6 @@
+/* variables for colors */
+/* variables for spacing */
+/* general style */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +17,7 @@ body {
   font-family: "Poppins", "Roboto", "-apple-system", "BlinkMacSystemFont", '"Segoe UI"', '"Helvetica Neue"', "Arial", "sans-serif", '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"';
 }
 
+/* classes */
 .background {
   height: 100vh;
   width: 100%;
@@ -138,15 +142,27 @@ body {
   border-radius: 4px;
 }
 
-#removeFriend {
+.notification-count {
+  color: #FFFFFF;
+  background-color: #DB9D47;
+  box-shadow: 1px 1px 1px #000000;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  margin-left: 0.25rem;
+}
+
+.removeFriend {
   transition: color 0.2s, text-shadow 0.5s;
 }
 
-#removeFriend:hover {
+.removeFriend:hover {
   text-shadow: 0 0 2px #FF0000;
   color: #FF0000;
 }
 
+/* media queries */
+/* fonts */
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-ExtraBold.ttf") format("truetype");
