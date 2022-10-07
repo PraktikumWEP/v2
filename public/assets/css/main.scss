@@ -1,15 +1,18 @@
+/* variables for colors */
 $light: #FFFFFF;
 $dark: #000000;
 $primary: #DB9D47;
 $secondary: #1B1B27;
 $red: #FF0000;
 
+/* variables for spacing */
 $mElement: 1rem;
 $mElementMedium: 2rem;
 $mElementLong: 3rem;
 $pContainerL: 4.25rem;
 $pContainerS: 1.5rem;
 
+/* general style */
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +40,7 @@ body {
         '"Segoe UI Symbol"',
 }
 
+/* classes */
 .background {
     height: 100vh;
     width: 100%;
@@ -160,6 +164,7 @@ body {
     border-radius: 4px;
 }
 
+/* IDs */
 #removeFriend {
     transition: color .2s, text-shadow .5s;
 }
@@ -169,6 +174,9 @@ body {
 	color: $red;
 }
 
+/* media queries */
+
+/* fonts */
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
