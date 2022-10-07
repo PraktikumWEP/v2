@@ -40,6 +40,12 @@ body {
         '"Segoe UI Symbol"',
 }
 
+hr {
+    color: $dark;
+    display: block;
+    width: 100%;
+}
+
 /* classes */
 .background {
     height: 100vh;
