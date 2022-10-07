@@ -21,6 +21,7 @@ hr {
   color: #000000;
   display: block;
   width: 100%;
+  border: dashed 1px;
 }
 
 fieldset {
@@ -117,8 +118,7 @@ fieldset {
 }
 
 .breadcrumb-divider {
-  color: #DB9D47;
-  font-weight: bold;
+  color: #000000;
 }
 
 .link {
@@ -151,6 +151,18 @@ fieldset {
   transition: all 0.15s ease-out;
   transition-delay: 0.2s;
   border-radius: 4px;
+}
+
+.inputs::-moz-placeholder {
+  color: #000000;
+}
+
+.inputs:-ms-input-placeholder {
+  color: #000000;
+}
+
+.inputs::placeholder {
+  color: #000000;
 }
 
 .notification-count {

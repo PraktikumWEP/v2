@@ -44,6 +44,7 @@ hr {
     color: $dark;
     display: block;
     width: 100%;
+    border: dashed 1px;
 }
 
 fieldset {
@@ -139,8 +140,7 @@ fieldset {
 }
 
 .breadcrumb-divider {
-    color: $primary;
-    font-weight: bold;
+    color: $dark;
 }
 
 .link {
@@ -173,6 +173,10 @@ fieldset {
     transition: all .15s ease-out;
     transition-delay: 0.2s;
     border-radius: 4px;
+}
+
+.inputs::placeholder {
+    color: $dark;
 }
 
 .notification-count {
