@@ -15,26 +15,32 @@
     </head>
     <body>
         <div class="background centerRow">
-            <div class="mElementM">
-                <h1>Profile Settings</h1>
-            </div>
-            <div class="mElement">
-                <fieldset>
-                    <legend>Base Data</legend>
-                    <div class="mElement">
-                        <div class="mElement">
+            <div class="max-width centerRowV card">
+                <div class="mElementM">
+                    <h1>
+                        Profile Settings
+                    </h1>
+                </div>
+                <div class="mElement">
+                    <fieldset class="pContainerS">
+                        <legend>Base Data</legend>
+                        <div class="mElementM">
                             <div class="mElement">
                                 <label>First Name</label>
                             </div>
                             <div class="mElement">
-                                <input type="text" placeholder="Your name" class="input"></input>
+                                <input type="text" placeholder="Your name" class="input" required/>
                             </div>
                         </div>
-                        <div class="mElement">
-                            <label>Last Name</label>
-                            <input type="text" placeholder="Your surname" class="input"></input>
+                        <div class="mElementM">
+                            <div class="mElement">
+                                <label>Last Name</label>
+                            </div>
+                            <div class="mElement">
+                                <input type="text" placeholder="Your surname" class="input" required/>
+                            </div>
                         </div>
-                        <div class="mElement">
+                        <div class="mElementM">
                             <label>Coffee or Tea?</label>
                             <select>
                                 <option>Neither</option>
@@ -43,41 +49,43 @@
                                 <option>Both</option>
                             </select>
                         </div>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="mElement">
-                <fieldset>
-                    <legend>Tell Something about you</legend>
-                    <div class="mElement">
-                        <textarea placeholder="Leave a comment here" class="input"></textarea>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="mElement">
-                <fieldset>
-                    <legend>Preferred Chat Layout</legend>
-                    <div class="mElement">
+                    </fieldset>
+                </div>
+
+                <div class="mElement">
+                    <fieldset class="pContainerS">
+                        <legend>Tell Something about you</legend>
                         <div class="mElement">
-                            <input type="radio" name="layout" checked="checked" required>Username and message in one line</input>
+                            <textarea placeholder="Leave a comment here" class="input"></textarea>
                         </div>
+                    </fieldset>
+                </div>
+                
+                <div class="mElement">
+                    <fieldset class="pContainerS">
+                        <legend>Preferred Chat Layout</legend>
                         <div class="mElement">
-                            <input type="radio" name="layout" required>Username and message in seperated lines</input>
+                            <div class="mElement">
+                                <input type="radio" name="layout" checked="checked" required>Username and message in one line</input>
+                            </div>
+                            <div class="mElement">
+                                <input type="radio" name="layout" required>Username and message in seperated lines</input>
+                            </div>
                         </div>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="mElement">
-                <a href="friendlist.html">
-                    <button class="button">
-                        Cancel
-                    </button>
-                </a>
-                <a href="">
-                    <button class="button">
-                        Save
-                    </button>
-                </a>
+                    </fieldset>
+                </div>
+                <div class="button-box mElement">
+                    <a href="friendlist.html">
+                        <button class="button mElement">
+                            Cancel
+                        </button>
+                    </a>
+                    <a href="">
+                        <button class="button mElement">
+                            Save
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     </body>

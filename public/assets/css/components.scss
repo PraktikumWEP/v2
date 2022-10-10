@@ -6,7 +6,7 @@ $secondary: #1B1B27;
 $red: #FF0000;
 
 /* variables for spacing */
-$mElement: 1rem;
+$mElementS: 1rem;
 $mElementM: 2rem;
 $mElementL: 3rem;
 $pContainerS: 1.5rem;
@@ -74,9 +74,10 @@ $pContainerL: 4.25rem;
 .input {
     font-size: 14px;
     border: none;
+    border: 2px solid rgba(0,0,0,0);
     border-bottom: 1px solid $dark;
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     display: block;
     transition: all .15s ease-out;
 }
@@ -116,4 +117,14 @@ $pContainerL: 4.25rem;
 
 .removeFriend:hover {
     color: $red;
+}
+
+
+@media(max-width: 580px) {
+    .button-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
