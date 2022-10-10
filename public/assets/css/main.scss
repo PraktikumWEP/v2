@@ -6,11 +6,11 @@ $secondary: #1B1B27;
 $red: #FF0000;
 
 /* variables for spacing */
-$mElement: 1rem;
-$mElementMedium: 2rem;
-$mElementLong: 3rem;
-$pContainerL: 4.25rem;
+$mElementS: 1rem;
+$mElementM: 2rem;
+$mElementL: 3rem;
 $pContainerS: 1.5rem;
+$pContainerL: 4.25rem;
 
 /* general style */
 * {
@@ -40,6 +40,11 @@ body {
         '"Segoe UI Symbol"',
 }
 
+h1 {
+    font-size: 2.125rem;
+    text-align: center;
+}
+
 hr {
     color: $dark;
     display: block;
@@ -57,17 +62,6 @@ fieldset {
     height: 100vh;
     width: 100%;
     background-color: $secondary;
-}
-
-.card {
-    background-color: $light;
-    padding: $pContainerL;
-    border-radius: 1.5rem;
-    backface-visibility: hidden;
-    display: flex;
-    align-items: "center";
-    justify-content: "center";
-    color: $dark;
 }
 
 .max-width {
@@ -94,15 +88,15 @@ fieldset {
 }
 
 .mElement {
-    margin: $mElement;
+    margin: $mElementS;
 }
 
 .mElementL {
-    margin: $mElementLong;
+    margin: $mElementL;
 }
 
 .mElementM {
-    margin: $mElementMedium;
+    margin: $mElementM;
 }
 
 .pContainerL {
@@ -111,91 +105,6 @@ fieldset {
 
 .pContainerS {
     padding: $pContainerS;
-}
-
-.image {
-    border-radius: 50%;
-    width: 160px;
-    height: 160px;
-}
-
-.button {
-    background-color: $primary;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 0 0;
-    text-transform: "lowercase";
-    transition: 0.15s;
-    color: $secondary;
-    width: 200px;
-    padding: 15px 35px 15px 35px;
-    border: none;
-    font-weight: bold;
-}
-
-.button:hover {
-    background-color: $secondary;
-    box-shadow: 0 0 0 0;
-    transition: 0.15s;
-    color: $light;
-}
-
-.breadcrumb-divider {
-    color: $dark;
-}
-
-.link {
-	color: $primary;
-	transition: text-shadow .5s;
-    font-weight: bold;
-}
-
-.link:hover {
-	text-shadow: 0 0 3px $primary;
-}
-
-.paragraph {
-    margin-right: 10%;
-    margin-left: 10%;
-}
-
-.inputs {
-    border: none;
-    border-bottom: 1px solid $dark;
-    width: 100%;
-    display: block;
-    transition: all .15s ease-out;
-}
-
-.inputs:focus {
-    border-color: $dark;
-    border: 2px solid $dark;
-    padding: 10px;
-    transition: all .15s ease-out;
-    transition-delay: 0.2s;
-    border-radius: 4px;
-}
-
-.inputs::placeholder {
-    color: $dark;
-}
-
-.notification-count {
-    color: $light;
-    background-color: $primary;
-    box-shadow: 1px 1px 1px $dark;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    margin-left: .25rem;
-}
-
-.removeFriend {
-    transition: color .2s, text-shadow .5s;
-}
-
-.removeFriend:hover {
-    text-shadow: 0 0 2px $red;
-	color: $red;
 }
 
 /* media queries */
