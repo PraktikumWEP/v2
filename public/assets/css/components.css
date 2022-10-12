@@ -157,6 +157,10 @@
   color: grey;
 }
 
+.textarea {
+  max-width: 750px;
+}
+
 @media (max-width: 580px) {
   .button-box {
     display: -webkit-box;
