@@ -146,6 +146,17 @@
   padding: 0px;
 }
 
+.chat-message {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr 1fr;
+      grid-template-columns: 7fr 1fr;
+}
+
+.time {
+  color: grey;
+}
+
 @media (max-width: 580px) {
   .button-box {
     display: -webkit-box;

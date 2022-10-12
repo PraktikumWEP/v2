@@ -128,6 +128,15 @@ $pContainerL: 4.25rem;
     padding: 0px;
 }
 
+.chat-message {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+}
+
+.time {
+    color: grey;
+}
+
 @media(max-width: 580px) {
     .button-box {
         display: flex;

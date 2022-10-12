@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="assets/css/components.css">
     </head>
     <body>
-        <div class="chat background centerRow">
+        <div class="background centerRow">
             <div class="register max-width centerRowV card">
                 <div class="chat-text mElement">
                     <h1>Chat with Tom</h1>
@@ -37,31 +37,41 @@
                     </a>
                 </div>
 
-                <br>
-
-                <div class="chat-messages mElementM pContainerS">
-                    <div class="chat-message" style="display:flex;">
-                        <div class="chat-message-user">
-                            Tom:&nbsp;
+                <div class="mElement">
+                    <fieldset class="pContainerS" >
+                        <legend>Chat</legend>
+                        <div>
+                            <div class="chat-message mElement">
+                                <div>
+                                    <span class="chat-message-user">
+                                        Tom:&nbsp;
+                                    </span>
+                                    <span class="chat-message-text">
+                                        Hallo, Welt!
+                                    </span>
+                                </div>
+                                <div class="time">
+                                    19:43:01
+                                </div>
+                            </div>
+                            <div class="chat-message mElement">
+                                <div>
+                                    <span class="chat-message-user">
+                                        Jerry:&nbsp;
+                                    </span>
+                                    <span class="chat-message-text">
+                                        Wie gehts?
+                                    </span>
+                                </div>
+                                <div class="time">
+                                    19:57:20
+                                </div>
+                            </div>
                         </div>
-                        <div class="chat-message-text">
-                            Hallo, Welt!
-                        </div>
-                    </div>
-                    <br>
-                    <div class="chat-message" style="display:flex;">
-                        <div class="chat-message-user">
-                            Jerry:&nbsp;
-                        </div>
-                        <div class="chat-message-text">
-                            Wie gehts?
-                        </div>
-                    </div>
+                    </fieldset>
                 </div>
 
-                <br>
-
-                <div class="chat-new-message">
+                <div class="chat-new-message mElementM">
                     <div class="mElement">
                         <input class="input-message input" placeholder="New Message" required>
                     </div>
