@@ -125,13 +125,11 @@ fieldset {
 }
 
 /* media queries */
-@media(max-width: 465px) {
+@media(max-width: 550px) {
     .background {
         padding: 0;
     }
-}
 
-@media(max-width: 550px) {
     .pContainerS {
         padding: 0.66rem;
     }
