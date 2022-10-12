@@ -46,6 +46,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 hr {
     color: $dark;
     display: block;
@@ -89,6 +94,12 @@ fieldset {
     justify-content: center;
 }
 
+.centerCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .mElement {
     margin: $mElementS;
 }
@@ -114,6 +125,17 @@ fieldset {
 }
 
 /* media queries */
+@media(max-width: 465px) {
+    .background {
+        padding: 0;
+    }
+}
+
+@media(max-width: 550px) {
+    .pContainerS {
+        padding: 0.5rem;
+    }
+}
 
 /* fonts */
 @font-face {

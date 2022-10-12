@@ -50,6 +50,11 @@ $pContainerL: 4.25rem;
     color: $light;
 }
 
+.breadcrumb {
+    width: max-content;
+    margin-bottom: 2rem;
+}
+
 .breadcrumb-divider {
     color: $dark;
 }
@@ -119,6 +124,9 @@ $pContainerL: 4.25rem;
     color: $red;
 }
 
+.notification-count:empty {
+    padding: 0px;
+}
 
 @media(max-width: 580px) {
     .button-box {

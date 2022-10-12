@@ -6,9 +6,15 @@
   border-radius: 1.5rem;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: "center";
-  justify-content: "center";
+  -webkit-box-align: "center";
+      -ms-flex-align: "center";
+          align-items: "center";
+  -webkit-box-pack: "center";
+      -ms-flex-pack: "center";
+          justify-content: "center";
   color: #000000;
 }
 
@@ -22,9 +28,11 @@
   font-size: 16px;
   background-color: #DB9D47;
   border-radius: 1.5rem;
-  box-shadow: 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
   text-transform: "lowercase";
-  transition: 0.3s;
+  -webkit-transition: 0.30s;
+  transition: 0.30s;
   color: #1B1B27;
   width: 200px;
   padding: 15px 35px 15px 35px;
@@ -34,9 +42,18 @@
 
 .button:hover {
   background-color: #1B1B27;
-  box-shadow: 0 0 0 0;
-  transition: 0.3s;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transition: 0.30s;
+  transition: 0.30s;
   color: #FFFFFF;
+}
+
+.breadcrumb {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 2rem;
 }
 
 .breadcrumb-divider {
@@ -45,12 +62,14 @@
 
 .link {
   color: #DB9D47;
-  transition: text-shadow 0.3s;
+  -webkit-transition: text-shadow .30s;
+  transition: text-shadow .30s;
   font-weight: bold;
 }
 
 .link:hover {
-  transition: 0.3s;
+  -webkit-transition: 0.30s;
+  transition: 0.30s;
   color: #1B1B27;
 }
 
@@ -67,22 +86,28 @@
   width: 100%;
   padding: 7px;
   display: block;
-  transition: all 0.15s ease-out;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
 }
 
 .input:focus {
   border-color: #000000;
   border: 2px solid #000000;
   padding: 10px;
-  transition: all 0.15s ease-out;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
   border-radius: 4px;
 }
 
-.input::-moz-placeholder {
+.input::-webkit-input-placeholder {
   color: #000000;
 }
 
 .input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.input::-ms-input-placeholder {
   color: #000000;
 }
 
@@ -100,26 +125,42 @@
 .notification-count {
   color: #FFFFFF;
   background-color: #DB9D47;
-  box-shadow: 1px 1px 1px #000000;
+  -webkit-box-shadow: 1px 1px 1px #000000;
+          box-shadow: 1px 1px 1px #000000;
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 5px;
-  margin-left: 0.25rem;
+  margin-left: .25rem;
 }
 
 .removeFriend {
-  transition: color 0.2s, text-shadow 0.5s;
+  -webkit-transition: color .2s, text-shadow .5s;
+  transition: color .2s, text-shadow .5s;
 }
 
 .removeFriend:hover {
   color: #FF0000;
 }
 
+.notification-count:empty {
+  padding: 0px;
+}
+
 @media (max-width: 580px) {
   .button-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-}/*# sourceMappingURL=components.css.map */
+}
+/*# sourceMappingURL=components.css.map */
