@@ -126,6 +126,15 @@
   padding: 0px;
 }
 
+.chat-message {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+}
+
+.time {
+  color: grey;
+}
+
 .textarea {
   max-width: 750px;
 }
